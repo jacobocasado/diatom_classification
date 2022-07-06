@@ -6,7 +6,7 @@ Este directorio contiene los 4 scripts de Python con las funciones respectivas p
 Estas celdas se comentan en el código para facilitar su búsqueda y edición por parte del usuario. 
 A continuación se procede a explicar brevemente el funcionamiento de cada uno de los scripts ya que cada script está comentado celda a celda, explicando todo lo que se va haciendo. 
 
-### ```rename_data.py```
+## ```rename_data.py```
 
 Este script de Python se creó inicialmente debido a que las imágenes de cada diatomea se almacenaron en un subdirectorio por cada página web de la que se han obtenido.
 
