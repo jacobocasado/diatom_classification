@@ -13,10 +13,12 @@ $ o descargarlo como archivo .zip (clone, descargar como zip)
 
 # 2. Cargar la imagen Docker
 $ cd diatom/classification/deploy
-$ docker build -t deploy .
+$ docker build -t project .
 
 # 3. Lanzar la imagen Docker
-$ docker run -it --rm -p 5000:5000 deploy
+$ docker run -it --rm -p 5000:5000 project
 ```
 
 Abrir http://localhost:5000 cuando el proceso de carga y lanzamiento haya finalizado.
+
+El nombre del contenedor Docker (project) puede modificarse si se desea.
