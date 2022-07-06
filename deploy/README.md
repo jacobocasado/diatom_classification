@@ -12,7 +12,7 @@ $ git clone https://github.com/jacobocasado/diatom_classification.git
 $ o descargarlo como archivo .zip (clone, descargar como zip)
 
 # 2. Cargar la imagen Docker
-$ cd diatom/classification/deploy
+$ cd diatom_classification/deploy
 $ docker build -t project .
 
 # 3. Lanzar la imagen Docker
