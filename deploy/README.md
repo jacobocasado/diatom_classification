@@ -2,7 +2,8 @@
 
 ## Pasos principales para ejecutar la herramienta usando Docker y Python
 
-Instalar Docker **[Docker](https://www.docker.com)** y **[Python] (https://www.python.org/downloads/)**
+Instalar **[Docker](https://www.docker.com)** y **[Python](https://www.python.org/downloads/)** (clickear)
+
 Una vez instalados seguir los siguientes pasos:
 
 ```
