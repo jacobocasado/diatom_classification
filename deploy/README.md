@@ -18,6 +18,7 @@ $ docker build -t project .
 
 # 3. Lanzar la imagen Docker
 $ docker run -it --rm -p 5000:5000 project
+Este comando es el que hay que ejecutar cada vez que se quiera lanzar la herramienta web. El resto de comandos sólo son necesarios la primera vez.
 ```
 
 Abrir http://localhost:5000 cuando el proceso de carga y lanzamiento haya finalizado.
