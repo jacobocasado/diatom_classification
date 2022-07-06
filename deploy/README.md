@@ -1,27 +1,21 @@
-# Deploy Keras Model with Flask as Web App in 10 Minutes
+# Manual de usuario para el lanzamiento de la herramienta web
 
-## Getting Started in 10 Minutes
+## Pasos principales para ejecutar la herramienta usando Docker y Python
 
-- Clone this repo 
-- Install requirements
-- Run the script
-- Go to http://localhost:5000
-- Done! :tada:
+Instalar Docker **[Docker](https://www.docker.com)** y **[Python] (https://www.python.org/downloads/)**
+Una vez instalados seguir los siguientes pasos:
 
-## Run with Docker
+```
+# 1. Clonar este repositorio de GitHub
+$ git clone https://github.com/jacobocasado/diatom_classification.git
+$ o descargarlo como archivo .zip (clone, descargar como zip)
 
-With **[Docker](https://www.docker.com)**, you can quickly build and run the entire application in minutes :whale:
+# 2. Cargar la imagen Docker
+$ cd diatom/classification/deploy
+$ docker build -t deploy .
 
-```shell
-# 1. First, clone the repo
-$ git clone https://github.com/mtobeiyf/keras-flask-deploy-webapp.git
-$ cd keras-flask-deploy-webapp
-
-# 2. Build Docker image
-$ docker build -t keras_flask_app .
-
-# 3. Run!
-$ docker run -it --rm -p 5000:5000 keras_flask_app
+# 3. Lanzar la imagen Docker
+$ docker run -it --rm -p 5000:5000 deploy
 ```
 
-Open http://localhost:5000 and wait till the webpage is loaded.
+Abrir http://localhost:5000 cuando el proceso de carga y lanzamiento haya finalizado.
