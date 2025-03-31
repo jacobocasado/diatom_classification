@@ -103,12 +103,12 @@ def predict():
         labels, probabilities = model_predict(img, model)
         
         # Decimos la prediccion TOP 1.
-        result = "La clase predicha por el modelo es <b> " + labels[0] + " </b> <br> "
-        result += "Predicciones: <br> "
+        result = "Predicted diatom class <b> " + labels[0] + " </b> <br> "
+        result += "Prediction % (top 5): <br> "
         
         # Listamos las top 5 predicciones junto con su probabilidad.
         for i in range(len(labels)):
-            result = result + str(labels[i]) +  " - probabilidad: " + str(round(probabilities[i], 2)) + " %. <br>"
+            result = result + str(labels[i]) +  " - probability: " + str(round(probabilities[i], 2)) + " %. <br>"
             
         # Serializamos el resultado. Copiado de tutorial basico de Flask.
         return jsonify(result=result)

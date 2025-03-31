@@ -50,7 +50,7 @@ function submitImage() {
   console.log("submit");
 
   if (!imageDisplay.src || !imageDisplay.src.startsWith("data")) {
-    window.alert("Selecciona una imagen antes de enviar.");
+    window.alert("Select an image before sending the data.");
     return;
   }
 
@@ -119,8 +119,8 @@ function predictImage(image) {
         });
     })
     .catch(err => {
-      console.log("Un error ha ocurrido", err.message);
-      window.alert("Algo inesperado ha ocurrido. Vuelve a intentarlo.");
+      console.log("An error happened", err.message);
+      window.alert("Something unexpected happened. Try it again.");
     });
     show(loader)
 }
